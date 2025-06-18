@@ -40,6 +40,8 @@ def get_article(id):
             return jsonify({'title': row[0], 'content': row[1]})
         return jsonify({'message': 'Not found'}), 404
 
-if __name__ == '__main__':
-    init_db()
-    app.run(debug=True)
+# if __name__ == '__main__':
+#     init_db()
+#     app.run(debug=True)
+
+init_db()
